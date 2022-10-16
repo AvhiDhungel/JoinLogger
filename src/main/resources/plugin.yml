@@ -4,7 +4,7 @@ author: AvhiDh
 main: com.github.AvhiDh.JoinLogger
 api-version: '1.19'
 commands:
-  jlreload:
-    description: Reload JoinLogger Config
-    usage: /jlreload
-    permission: DeathSpot.Reload
+  jl:
+    description: JoinLogger Admin Commands
+    usage: /jl
+    permission: JoinLogger.Admin

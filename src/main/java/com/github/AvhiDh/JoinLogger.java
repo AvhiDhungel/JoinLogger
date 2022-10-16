@@ -70,8 +70,9 @@ public final class JoinLogger extends JavaPlugin {
             public void run() { reload(); }
         };
 
-        PluginCommand command = this.getCommand("jlreload");
-        command.setExecutor(new Commands(reloadConfig));
+        PluginCommand command = this.getCommand("jl");
+        command.setExecutor(new Commands(reloadConfig, new ExportHelper(conn)));
+        command.setTabCompleter(new TabCompleter());
     }
 
     private void reload() {
